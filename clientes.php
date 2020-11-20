@@ -15,7 +15,7 @@
         </a>
         <h2 class="fw-300">"El mejor calzado al alcance de sus manos"</h2>
         <nav>
-            <a href="#">Ofertas</a>
+            <a href="ofertas.php">Ofertas</a>
             <a href="#">Mujeres</a>
             <a href="#">Hombres</a>
             <a href="#">Niños</a>

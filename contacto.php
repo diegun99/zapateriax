@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zapateria X</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <header class="encabezado">
-        <img src="img/logo.png" alt="Logo Zapatería">
-        <h2 class="fw-300">"El mejor calzado al alcance de sus manos"</h2>
-        <nav>
-            <a href="#">Ofertas</a>
-            <a href="#">Mujeres</a>
-            <a href="#">Hombres</a>
-            <a href="#">Niños</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+<?php include_once 'archivos/secciones/header.php'; ?>
+
     <div class="especial">
         <h3>NUEVA COLECCIÓN PARA MAMÁ</h3>
     </div>
@@ -81,45 +61,5 @@
             </div>
         </div>
     </main>
-    <footer class="pie">
-        <div>
-            <h4>SERVICIO AL CLIENTE</h4>
-            <p>Seguimiento a Pedidos</p>
-            <p>Contáctanos</p>
-            <p>Nuestro compromiso</p>
-        </div>
-        <div>
-            <h4>INFORMACIÓN</h4>
-            <p>Preguntas frecuentes</p>
-            <p>Términos y condiciones</p>
-            <p>Guía de tallas</p>
-        </div>
-        <div>
-            <h4>CORPORATIVO</h4>
-            <p>Quiénes somos</p>
-            <p>Nuestro Calzado</p>
-            <p>Todo sobre los pies</p>
-            <p>Como ser empleado</p>
-            <p>Aviso legal</p>
-        </div>
-    </footer>
-    <div class="copyright">
-        <p>&copy; ING. LEONARDO ALVAREZ</p>
-        <div class="redes">
-            <a href="#">
-                <img src="img/fb.webp" alt="Facebook">
-            </a>
-            <a href="#">
-                <img src="img/twitter.png" alt="Twitter">
-            </a>
-            <a href="#">
-                <img src="img/instagram.png" alt="Instagram">
-            </a>
-            <a href="#">
-                <img src="img/youtube.png" alt="YouTube">
-            </a>
-        </div>
-    </div>
-
-</body>
-</html>
+    
+    <?php include_once 'archivos/secciones/footer.php'; ?>
