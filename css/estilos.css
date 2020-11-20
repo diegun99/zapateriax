@@ -1,0 +1,238 @@
+html{
+    font-size: 62.5%; 
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.contenedor{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+.fw-300{
+    font-weight: 300;
+}
+.margenes{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.centrar-texto{
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.6rem;
+}
+h3{
+    font-size: 2.2rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+.encabezado{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    height: 30vh;
+}
+.encabezado h2{
+    margin: 0;
+    font-size: 2rem;
+}
+.encabezado h2::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: .5rem;
+    background-color: #ADA996;
+}
+nav{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 10rem;
+    font-weight: 700;
+    color: black;
+}
+
+nav a:last-of-type{
+    margin-right: 0;
+}
+.especial{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(212, 137, 200);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.especial h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    color: white;
+}
+.promo-madre{
+    display: flex;
+    justify-content: space-between;
+}
+.aviso{
+    flex-basis: calc(33.3% - 3rem);
+}
+.boton{
+    display: block;
+    text-decoration: none;
+    border: 1px solid rgb(80, 80, 80);
+    color: black;
+    padding: .5rem 3rem .5rem 3rem;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.pie{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+.pie p{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.copyright{
+    border-top: .1rem solid rgb(195, 195, 195);
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    padding: 0 6rem 0 6rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright p{
+    margin: 0;
+    padding: 2rem;
+}
+.redes img{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+}
+.redes a{
+    text-decoration: none;
+}
+h1::after{
+    display: block;
+    content: "";
+    height: .5rem;
+    background-color: #ADA996;
+    width: 15rem;
+    margin: 0 auto;
+}
+.contenido-empresa{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3rem;
+}
+.imagen-empresa{
+    margin: 0;
+}
+form{
+    border-radius: 2rem;
+    border: .1rem inset #DBDBDB;
+    padding: 2rem;
+}
+label{
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+input:not([type="submit"]){
+    border: none;
+    border-bottom: .2rem solid rgb(24, 24, 133);
+    padding: 1rem;
+    width: 95%;
+}
+textarea{
+    border: .1rem solid rgb(24, 24, 133);
+    padding: 1rem;
+    width: 95%;
+    border-radius: .3rem;
+    height: 9rem;
+}
+input[type="submit"]{
+    margin:0;
+    margin-top: .5rem;
+}
+.contenedor-prod{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.producto{
+    border: .1rem outset rgb(131, 131, 131);
+    border-radius: 1rem;
+    padding: .3rem;
+}
+.producto h3{
+    margin: 0;
+    text-align: center;
+}
+.producto h3::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: .1rem;
+    background-color: rgb(131, 131, 131);
+}
+.ref-marca{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.ref-marca p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+.texto-prod{
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.precio{
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(136, 12, 12);
+    font-size: 2.5rem;
+}
+.contenedor-form{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.cont-genero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
