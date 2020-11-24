@@ -17,21 +17,65 @@
             <a href="#" class="boton">COMPRAR</a>
         </div>
     </section>
+
+    <?php
+    // conexion a la base de datos
+        require_once('archivos/procesos/conexion.php');
+        //crear consultas
+        $sql = "select* from productos";
+        //EJECUTAA CONSULTAS //almacenar consulta en resultado
+        $resultado = $conexion-> query($sql);
+        // crear arreglo asociativo y guardar en productos
+
+        /*recorrer arreglo ,quiza falt el endwhile
+        while ($productos = $resultado->fetch_assoc()):
+            
+
+            echo $productos['nombre_producto'];
+            echo "<br>";
+
+        endwhile;
+        */
+ 
+        
+            
+        
+
+
+
+
+        /*mostrar arreglo
+        echo"<pre>";
+        echo var_dump($productos);
+        echo "</pre>";*/
+
+
+        
+        
+
+    ?>
+
     <main class="contenedor margenes">
         <h1 class="centrar-texto">Productos</h1>
         <div class="contenedor-prod">
+
+            <?php while($productos = $resultado->fetch_assoc()):?>
             <div class="producto">
-                <img src="zapatos/black-shoes1.jpg" alt="Negros 1">
-                <h3>Tenis Negro Hombre</h3>
+                <img src="zapatos/<?php echo $productos['imagen_producto']; ?>" alt="<?php echo $productos['nombre_producto']; ?>">
+                <h3><?php echo $productos['nombre_producto']; ?><h3>
                     <div class="ref-marca">
-                        <p>Referencia: N88B</p>
-                        <p>Marca: SIKA</p>
+                        <p>Referencia: <?php echo $productos['ref_producto']; ?> </p>
+                        <p>Marca: <?php echo $productos['marca_producto']; ?></p>
                     </div>
-                <p class="precio"><?php echo "$ ".number_format("99000", 0, '.', '.'); ?></p>
-                <p class="texto-prod">Acabados en cuero con comodidad para el día a día. Pregunte por nuestras promociones 2x1 en esta referencia.</p>
-                <a href="#" class="boton">COMPRAR</a>
+                <p class="precio"><?php echo "$ ".number_format($productos['precio_producto'], 0, '.', '.'); ?></p>
+                <p class="texto-prod"><?php echo ($productos['descripcion_producto']); ?></p>
+                <a href="producto.php?id=<?php echo $productos['idproducto']; ?>" class="boton">COMPRAR</a>
             </div>
+
+            <?php endwhile; ?>
         </div>
+
+        <?php $conexion->close(); ?>
     </main>
 
     <?php include_once 'archivos/secciones/footer.php'; ?>
