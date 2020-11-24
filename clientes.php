@@ -25,7 +25,7 @@
 
 <h1 class="centrar-texto">Registrar Cliente</h1>
     <div class="contenedor-form">
-        <form action="" method="post">
+        <form action="archivos/procesos/registrocliente.php" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre" required>
 
